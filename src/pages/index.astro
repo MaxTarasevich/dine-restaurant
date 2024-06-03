@@ -1,5 +1,9 @@
 ---
+import '../styles/global.scss'
 
+import { Picture } from 'astro:assets';
+
+import HeroBg from '../images/homepage/hero-bg-desktop.jpg'
 ---
 
 <html lang="en">
@@ -11,6 +15,12 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<section class="dining">
+			<div class="container">
+				<h1 class="dining-title title-xl">
+					Exquisite dining since 1989
+				</h1>
+			</div>
+		</section>
 	</body>
 </html>
