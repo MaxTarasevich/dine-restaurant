@@ -1,0 +1,14 @@
+---
+import './Button.scss';
+
+interface Props {
+  text: string;
+  dark?: boolean;
+}
+
+const {text, dark} = Astro.props
+---
+
+<a href="./booking" class="btn title-s">
+{text}
+</a>

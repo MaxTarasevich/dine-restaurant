@@ -1,0 +1,18 @@
+@use '../../styles/colors.scss' as *;
+
+.btn {
+  display: inline-block;
+  padding: 25px 55px;
+  border: 1px solid $White;
+  color: $White;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.6s ease-in-out, background-color 0.8s ease-in-out;
+}
+
+.btn:hover {
+  background-color: $White;
+  color: $Cod-Gray;
+}

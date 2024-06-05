@@ -1,8 +1,11 @@
 ---
 import '../styles/global.scss'
 
-import { Picture } from 'astro:assets';
+import { Picture, Image } from 'astro:assets';
 
+import Button from '../components/buttons/Button.astro'
+
+import Logo from '../images/logo.svg'
 import HeroBg from '../images/homepage/hero-bg-desktop.jpg'
 ---
 
@@ -17,9 +20,19 @@ import HeroBg from '../images/homepage/hero-bg-desktop.jpg'
 	<body>
 		<section class="dining">
 			<div class="container">
+				<header class="header">
+					<a href="./">
+						<Image src={Logo} alt="Logo" />
+					</a>
+				</header>
 				<h1 class="dining-title title-xl">
 					Exquisite dining since 1989
 				</h1>
+				<p class="dining-text body-txt">
+					Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse.
+				</p>
+				
+				<Button text='BOOK A TABLE'/>
 			</div>
 		</section>
 	</body>

@@ -11,16 +11,6 @@ h4 {
   padding: 0;
 }
 
-/* league-spartan-latin-wght-normal */
-@font-face {
-  font-family: 'League Spartan Variable';
-  font-style: normal;
-  font-display: auto;
-  font-weight: 100 900;
-  src: url(@fontsource-variable/league-spartan/files/league-spartan-latin-wght-normal.woff2) format('woff2-variations');
-  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-}
-
 body {
   font-family: 'League Spartan Variable', sans-serif;
 }
@@ -28,14 +18,54 @@ body {
 .container {
   max-width: 1110px;
   margin: 0 auto;
+
+  @media (max-width: 1280px) {
+    padding: 0 40px;
+  }
 }
 
 /*Dining section*/
-.dining {
-  background-image: url('../images/homepage/hero-bg-desktop.jpg');
-  color: $White;
+.header {
+  padding-top: 65px;
+  margin-bottom: 153px;
+  @media (max-width: 950px) {
+    margin: 0;
+    padding-top: 374px;
+    text-align: center;
+  }
 }
-.dining-title{
+
+.dining {
+  padding-bottom: 198px;
+  background-image: url('../images/homepage/hero-bg-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  color: $White;
+
+  @media (max-width: 950px) {
+    background-image: url('../images/homepage/hero-bg-tablet.jpg');
+    background-position: top;
+    text-align: center;
+  }
+}
+
+.dining-title {
+  margin-bottom: 10px;
   max-width: 507px;
   text-align: left;
+  @media (max-width: 950px) {
+    margin: 38px auto 0;
+    max-width: 360px;
+    text-align: center;
+  }
+}
+.dining-text {
+  margin-bottom: 40px;
+  max-width: 445px;
+  @media (max-width: 950px) {
+    margin: 20px auto 50px;
+    max-width: 575px;
+    text-align: center;
+  }
 }
