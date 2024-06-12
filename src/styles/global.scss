@@ -33,6 +33,9 @@ body {
     padding-top: 374px;
     text-align: center;
   }
+  @media (max-width: 650px) {
+    padding-top: 232px;
+  }
 }
 
 .dining {
@@ -48,12 +51,18 @@ body {
     background-position: top;
     text-align: center;
   }
+
+  @media (max-width: 650px) {
+    background-image: url('../images/homepage/hero-bg-mobile.jpg');
+  }
+
 }
 
 .dining-title {
   margin-bottom: 10px;
   max-width: 507px;
   text-align: left;
+
   @media (max-width: 950px) {
     margin: 38px auto 0;
     max-width: 360px;

@@ -18,6 +18,9 @@
   @media (max-width: 950px) {
     font-size: 48px;
   }
+  @media (max-width: 650px) {
+    font-size: 32px;
+  }
 }
 .title-l {
   font-weight: 700;
@@ -40,6 +43,9 @@
   font-weight: 400;
   line-height: 1.5;
   font-size: 20px;
+  @media (max-width: 650px) {
+    font-size: 16px;
+  }
 }
 .body-s {
   font-weight: 400;
